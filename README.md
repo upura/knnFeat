@@ -9,6 +9,12 @@ Python implementation of feature extraction with KNN.
 The following is R implementation:  
 http://davpinto.com/fastknn/articles/knn-extraction.html#understanding-the-knn-features
 
+## Requirements
+- Python 3.x
+  - numpy
+  - scikit-learn
+  - scipy
+
 ## Install
 ```
 git clone git@github.com:upura/knnFeat.git
