@@ -65,7 +65,7 @@ Quote from [here](http://davpinto.com/fastknn/articles/knn-extraction.html#under
 
 ## Licence
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+[MIT](https://github.com/upura/knnFeat/blob/master/LICENSE)
 
 ## Author
 
