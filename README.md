@@ -45,7 +45,7 @@ y = np.array([1 if i0 * i1 > 0 else 0 for (i0, i1)  in list(zip(x0, x1))])
 ### Feature extraction with KNN
 ```python
 from knnFeat import knnExtract
-newX = knnExtract(X, y, k=1, holds = 5)
+newX = knnExtract(X, y, k = 1, holds = 5)
 ```
 
 ### Visualization
