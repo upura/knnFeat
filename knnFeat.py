@@ -21,12 +21,12 @@ def knnExtract(X, y, k = 1, holds = 5):
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
         
-        features = np.empty([0, len(X_train)])
+        features = np.empty([0, len(X_test)])
         
         for class_index in range(CLASS_NUM):
             for k_index in range(k):
-                feat = np.array([np.apply_along_axis(_get_feat, 1, X_train, X_train, y_train, class_index, k_index)])
+                feat = np.array([np.apply_along_axis(_get_feat, 1, X_test, X_train, y_train, class_index, k_index)])
                 features = np.append(features, feat, axis = 0)
-        res[train_index] = features.T            
+        res[test_index] = features.T            
 
     return res
