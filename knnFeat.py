@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.model_selection import KFold
 
+
 def _distance(a, b):
     return np.linalg.norm(b - a)
 
