@@ -63,6 +63,17 @@ Quote from [here](http://davpinto.com/fastknn/articles/knn-extraction.html#under
 
 > This procedure repeats for each class label, generating k * c new features. Then, the new training features are generated using a n-fold CV approach, in order to avoid overfitting. 
 
+## Development
+```
+flake8 .
+```
+```
+pytest
+```
+```
+pytest -v -m 'success' --cov=.
+```
+
 ## License
 
 [MIT](https://github.com/upura/knnFeat/blob/master/LICENSE)
