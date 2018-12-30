@@ -70,6 +70,9 @@ flake8 .
 ```
 pytest
 ```
+```
+pytest -v -m 'success' --cov=.
+```
 
 ## License
 
