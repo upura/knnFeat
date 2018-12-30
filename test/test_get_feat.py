@@ -1,11 +1,13 @@
 import numpy as np
 import sys
 import os
+import pytest
 from knnFeat import _get_feat
 sys.path.append(os.getcwd())
 
 
 # Case 1: class_index == 0 and k_index == 0
+@pytest.mark.success
 def test_get_feat_c0k0():
     data = np.array([0, 0])
     X_train = np.reshape(np.array([0, 1, 3, 4, 5, 6, 1, 1, 0, 3]), (5, 2))
@@ -22,6 +24,7 @@ def test_get_feat_c0k0():
 
 
 # Case 2: class_index == 0 and k_index == 1
+@pytest.mark.success
 def test_get_feat_c0k1():
     data = np.array([0, 0])
     X_train = np.reshape(np.array([0, 1, 3, 4, 5, 6, 1, 1, 0, 3]), (5, 2))
@@ -38,6 +41,7 @@ def test_get_feat_c0k1():
 
 
 # Case 3: class_index == 1 and k_index == 0
+@pytest.mark.success
 def test_get_feat_c1k0():
     data = np.array([0, 0])
     X_train = np.reshape(np.array([0, 1, 3, 4, 5, 6, 0, 2, 0, 3]), (5, 2))
@@ -54,6 +58,7 @@ def test_get_feat_c1k0():
 
 
 # Case 4: class_index == 1 and k_index == 1
+@pytest.mark.success
 def test_get_feat_c1k1():
     data = np.array([0, 0])
     X_train = np.reshape(np.array([0, 1, 3, 4, 5, 6, 0, 2, 0, 3]), (5, 2))
