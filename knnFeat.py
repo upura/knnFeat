@@ -15,10 +15,10 @@ def _get_feat(data, X_train, y_train, class_index, k_index):
     return dist
 
 
-def knnExtract(X, y, k=1, holds=5):
+def knnExtract(X, y, k=1, folds=5):
     CLASS_NUM = len(set(y))
     res = np.empty((len(X), CLASS_NUM * k))
-    kf = KFold(n_splits=holds,  shuffle=True)
+    kf = KFold(n_splits=folds,  shuffle=True)
 
     for train_index, test_index in kf.split(X):
         X_train, X_test = X[train_index], X[test_index]
