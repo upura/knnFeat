@@ -4,7 +4,14 @@ knnFeat
 Feature Extraction with KNN
 
 ## Description
-Python implementation of feature extraction with KNN.  
+Python implementation of feature extraction with KNN.
+
+And @momijiame updated my implementation. I recommend to use this:  
+https://github.com/momijiame/gokinjo
+
+```
+pip install gokinjo
+```
 
 The following is R implementation:  
 http://davpinto.com/fastknn/articles/knn-extraction.html#understanding-the-knn-features
